@@ -128,3 +128,13 @@ bar_chart.write
 puts "Image saved in #{Dir.pwd}/images"
 
 
+=begin
+begin
+  file = File.open("images/bar_chart1.png", "w")
+  file.write(bar_chart.file) 
+rescue IOError => e
+  #some error occur, dir not writable etc.
+ensure
+  file.close unless file == nil
+end
+=end

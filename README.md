@@ -1,8 +1,18 @@
-This is a simple Game Theory Calculator, implemented in Ruby.
+#Game Theory Calculator
+Implemented in Ruby 2.1.0
 
-At the moment it's only a proof of concept. 
+Takes input for a payoff matrix and returns it as a bar chart in PNG form.
 
-Future plans:
-- Take output and convert into a useful form
-- Feed output to image file
-- Implement GUI in shoes
+Usage:
+'$ ruby gt_calc.rb'
+
+Requirements:
+[Googlecharts](https://github.com/mattetti/googlecharts)
+An excellent Ruby wrapper for the Google Chart API.
+
+Future Plans:
+- Output in payoff matrix form
+- Shoehorn (harhar) the logic into Shoes, just to see if I can
+
+
+
