@@ -4,7 +4,7 @@ Implemented in Ruby 2.1.0
 Takes input for a payoff matrix and returns it as a bar chart in PNG form.
 
 Usage:
-'$ ruby gt_calc.rb'
+`$ ruby gt_calc.rb`
 
 Requirements:
 [Googlecharts](https://github.com/mattetti/googlecharts)
