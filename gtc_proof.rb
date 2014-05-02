@@ -1,3 +1,4 @@
+=begin
 puts "Welcome to the Game Theory calculator."
 puts "Please enter the name of Player A:"
 
@@ -32,6 +33,17 @@ customers_loyal = gets.chomp.to_i
 puts "Enter number of swing customers:"
 
 customers_swing = gets.chomp.to_i
+=end
+player_A = "playA"
+player_B = "playB"
+price_high = 12
+price_medium = 10
+price_low = 5
+customers_total = 1000
+customers_loyal = 300
+customers_swing = 400
+
+
 
 price_array = [price_high, price_medium, price_low] 
 price_arrayA = [price_high, price_medium, price_low]
@@ -81,7 +93,11 @@ pricemix_array.each do |sub_array|
 	end
 end
 
-puts finalprice_array.to_s
+finalprice_array.each_slice(2) do |a| 
+		puts "#{player_A} = #{a[0]}"
+		puts "#{player_B} = #{a[1]}"	
+end
+
 
 
 
